@@ -281,7 +281,7 @@
                       {% for pot in potholes %}
                       <tr>
                         <td>
-                          <a href="{{ pot.image_url }}">{{ pot.image_url }}</a>
+                          <a class="imglink" href="{{ pot.image_url }}">{{ pot.image_url }}</a>
                         </td>
                         <td>
                           {{ pot.location }}
@@ -343,7 +343,7 @@
                       {% for cat in cattles %}
                       <tr>
                         <td>
-                          <a href="{{ cat.image_url }}">{{ cat.image_url }}</a>
+                          <a class="imglink" href="{{ cat.image_url }}">{{ cat.image_url }}</a>
                         </td>
                         <td>
                           {{ cat.location }}
@@ -470,6 +470,16 @@
 
     });
   </script>
+  <style>
+  .imglink{
+  width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  direction: rtl;
+}
+  </style>
 </body>
 
 </html>

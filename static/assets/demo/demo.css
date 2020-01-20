@@ -61,3 +61,12 @@
   max-width: 530px;
   margin: 0 auto;
 }
+
+.imglink{
+  width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  direction: rtl;
+}
